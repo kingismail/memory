@@ -1,0 +1,174 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(242, 246, 41);
+    
+}
+
+.frame_Row
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.game_container
+{
+    border: 2px solid black;
+    width: fit-content;
+    height: 76vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+}
+.frame_container
+{
+    width: 100px;
+    height: 150px;
+    margin: 20px 20px;
+    position: relative;
+    perspective: 800px;
+    cursor: pointer;
+}
+
+.card
+{
+    width: 100%;
+    height: 100%;
+    transition: 1200ms;
+    transform-style: preserve-3d;
+}
+
+.front_face, .back_face
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    backface-visibility: hidden;
+}
+
+.front_face
+{
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotateY(180deg);
+}
+.back_face
+{
+    background-color: rgb(18, 18, 18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: aliceblue;
+    
+}
+.rotate_card
+{
+    transform: rotateY(180deg);
+}
+
+.main_screen
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+}
+
+@media screen and (max-width: 768px){
+
+    body{
+        overflow: hidden;
+    }
+
+
+    .main_screen
+    {
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        position:  absolute;
+        z-index: 1;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .game_container
+    {
+    border: 2px solid black;
+    width: 100vw;
+    height: 76vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+    
+    }
+
+    .header
+    {
+        top: 0;
+        background-color: rgb(14, 14, 14);
+        width: 100vw;
+        height: 10vh;
+        box-shadow: 0 0 10px 2px rgb(30, 30, 30);
+        text-align: center;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main_screen .header .header_text{
+
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: beige;
+        font-size: 25px;
+    }
+
+    .game_logo
+    {
+        display: inline-flex;
+        width: 100vw;
+        height: 60vh;
+        background-color: black;
+    }
+
+    .play_button
+    {
+        background-color: black;
+        width: 100vw;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .play_button .button{
+
+        width: 150px;
+        height: 60px;
+        background-color: black;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        box-shadow: 0 0 10px 5px rgb(131, 131, 131);
+        font-size: 25px;
+    
+    }
+
+
+}
