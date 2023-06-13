@@ -18,9 +18,9 @@ body{
 
 .game_container
 {
-    border: 2px solid black;
+    border: 2px solid rgb(231, 231, 231);
     width: fit-content;
-    height: 76vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     margin-top: 200px;
@@ -28,8 +28,8 @@ body{
 }
 .frame_container
 {
-    width: 150px;
-    height: 200px;
+    width: 22vw;
+    height: 100px;
     margin: 5px 5px;
     position: relative;
     perspective: 800px;

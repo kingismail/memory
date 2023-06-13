@@ -94,6 +94,7 @@ body
     body{
         overflow-x: hidden;
         text-decoration: none;
+        zoom: normal;
     }
 
 
@@ -189,7 +190,7 @@ body
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
     .frame_container_logo
@@ -247,7 +248,7 @@ body
         bottom: 0;
         position: absolute;
         width: 100vw;
-        height: 50px;
+        height: 100px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -258,7 +259,6 @@ body
         color: aliceblue;
         font-size: 20px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
     }
 
 
