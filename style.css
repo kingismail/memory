@@ -12,6 +12,7 @@ body
     align-items: center;
     justify-content: center;
     background-color: rgb(242, 246, 41);
+    overflow: hidden;
     
 }
 
@@ -91,7 +92,8 @@ body
 @media screen and (max-width: 768px){
 
     body{
-        overflow: hidden;
+        overflow-x: hidden;
+        text-decoration: none;
     }
 
 
@@ -138,10 +140,11 @@ body
 
     .game_logo
     {
-        display: inline-flex;
+        display:block;
         width: 100vw;
-        height: 60vh;
+        height: 30vh;
         background-color: black;
+        margin-top: 100px;
     }
 
     .play_button
@@ -152,10 +155,11 @@ body
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-top: 100px;
     }
 
-    .play_button .button{
 
+    .play_button .button{
         width: 150px;
         height: 60px;
         background-color: black;
@@ -165,9 +169,115 @@ body
         justify-content: center;
         color: white;
         font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        box-shadow: 0 0 10px 5px rgb(131, 131, 131);
+        box-shadow: 0 0 2px 5px rgb(14, 14, 14);
         font-size: 25px;
-    
+        border: 2px  solid rgb(29, 29, 29);
+        transition: all 1s ease-in;
+        text-decoration: none;
+    }
+
+    .play_button  a
+    {
+        text-decoration: none;
+    }
+
+    .frame_Row_logo
+    {
+        width: 100vw;
+        height: 50%;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .frame_container_logo
+    {
+        width: 100px;
+        height: 120px;
+        margin: 10px 7px;
+        position: relative;
+        perspective: 800px;
+        cursor: pointer;
+
+    }
+
+    .card_logo
+    {
+        width: 100%;
+        height: 100%;
+        transition: 1200ms;
+        transform-style: preserve-3d;
+        animation-name: animate_logo;
+    }
+
+
+    .front_face_logo, .back_face_logo
+    {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        border-radius: 10px;
+        backface-visibility: hidden;
+    }
+
+    .front_face_logo
+    {
+        background-image: url("brain.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: aliceblue;
+        transform: rotateY(180deg);
+    }
+    .back_face_logo
+    {
+        background-color: rgb(18, 18, 18);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+        color: aliceblue;
+        
+    }
+
+    .main_screen_footer
+    {
+        background-color: rgb(14, 14, 14);
+        bottom: 0;
+        position: absolute;
+        width: 100vw;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main_screen_footer .credit
+    {
+        color: aliceblue;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
+
+
+    .loading_prompt_mobile
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: fit-content;
+        background-color: black;
+        margin-top: 50px;
+
+    }
+
+    .loading_prompt_mobile .loading_mobile{
+        color: aliceblue;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 30px;
     }
 
 
