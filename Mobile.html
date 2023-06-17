@@ -10,6 +10,13 @@
 </head>
 <body>
 
+    <div class="header"><div class="header_text">Memory Game </div></div>
+
+    <div class="info_container">
+        <div class="attempts">Attempts: 0</div>
+        <div class="time">Time: 00:00</div>
+    </div>
+
 <div class="game_container">
 <div class="frame_Row">
     <div class="frame_container">
@@ -45,6 +52,20 @@
     <div class="frame_container">
         <div class="card">
         <div class="back_face">?</div>
+        <div class="front_face" id="image5"></div>
+        </div>
+    </div>
+
+    <div class="frame_container">
+        <div class="card">
+        <div class="back_face">?</div>
+        <div class="front_face" id="image6"></div>
+        </div>
+    </div>
+
+    <div class="frame_container">
+        <div class="card">
+        <div class="back_face">?</div>
         <div class="front_face" id="image7"></div>
         </div>
     </div>
@@ -55,7 +76,9 @@
         <div class="front_face" id="image8"></div>
         </div>
     </div>
+</div>
 
+<div class="frame_Row">
     <div class="frame_container">
         <div class="card">
         <div class="back_face">?</div>
@@ -69,34 +92,18 @@
         <div class="front_face" id="image10"></div>
         </div>
     </div>
-</div>
 
-<div class="frame_Row">
     <div class="frame_container">
         <div class="card">
         <div class="back_face">?</div>
-        <div class="front_face" id="image13"></div>
+        <div class="front_face" id="image11"></div>
         </div>
     </div>
 
     <div class="frame_container">
         <div class="card">
         <div class="back_face">?</div>
-        <div class="front_face" id="image14"></div>
-        </div>
-    </div>
-
-    <div class="frame_container">
-        <div class="card">
-        <div class="back_face">?</div>
-        <div class="front_face" id="image15"></div>
-        </div>
-    </div>
-
-    <div class="frame_container">
-        <div class="card">
-        <div class="back_face">?</div>
-        <div class="front_face" id="image16"></div>
+        <div class="front_face" id="image12"></div>
         </div>
     </div>
 </div>
@@ -129,7 +136,16 @@
         <div class="front_face" id="image16"></div>
         </div>
     </div>
+    
 </div>
+
+<div class="game_buttons">
+    <button>Pause</button>
+    <button>restart</button>
+</div>
+
+
+<script src="mobile.js"></script>
     
 </body>
 </html>

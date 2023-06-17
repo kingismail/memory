@@ -1,13 +1,17 @@
-let images = [1, 2, 3, 4, 5, 6 , 7, 8, 9, 1, 2, 3, 4, 5, 6 , 7, 8, 9];
+//coded by Ismail--2023---copyright reserved
 
 // game variables
 
 load_prompt_mobile = document.getElementById('loading_mobile');
 play_button_mobile = document.getElementById('play_button_mobile');
 
-let game_not_started = true;
-let on_mobile_phone = false;
 
+let game_not_started = true,
+on_mobile_phone = false;
+
+let images = [1, 2, 3, 4, 5, 6 , 7, 8, 9, 1, 2, 3, 4, 5, 6 , 7, 8, 9];
+
+//load each and every image onto every tile
 
 for (i = 1; i < 19; i++)
 {
@@ -25,6 +29,7 @@ function wait()
     document.getElementById(open_cards[1]).parentElement.classList.remove('rotate_card');
     clearArray();
 };
+
 
 function turnCards()
 {
@@ -65,6 +70,8 @@ function returnCards()
         curr_element.classList.remove('rotate_card');}
     }
 }
+
+
 
 let open_cards = [];
 
@@ -122,9 +129,7 @@ for (i = 1; i < 1; i++)
     let image_face = document.getElementById(`image${i}`);
     console.log(image_face.parentElement.parentElement);
 }
-
 //Code for the mobile phones
-
 if (window.screen.width < 768) on_mobile_phone = true;
 
 
