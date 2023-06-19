@@ -81,7 +81,7 @@ body{
 .info_container
 {
     width: 90vw;
-    height: 18vh;
+    height: 13vh;
     margin: 0 auto;
     margin-bottom: 10px;
     margin-top: 20px;
@@ -89,6 +89,9 @@ body{
     align-items: center;
     justify-content: center;
     border: 2px solid white;
+    border-radius: 10px;
+    position: relative;
+    background-color: rgb(18, 18, 18);
 }
 
 
@@ -108,16 +111,22 @@ body{
 
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: beige;
-    font-size: 25px;
+    font-size: 20px;
     margin-left: 10px;
+    font-weight: 900;
 }
 
 .info_container div
 {
     color: white;
     font-family: fantasy;
-    margin: 20px 20px;
+    margin: 15px 15px;
     font-size: 25px;
+    background-color: rgb(32, 32, 32);
+    padding:5px 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 1px rgb(73, 73, 73);
+    
 }
 
 .game_buttons
@@ -142,6 +151,272 @@ body{
     font-family: fantasy;
 
 }
+
+.help
+    {
+        width: 92vw;
+        height: fit-content;
+        background-color: rgb(39, 39, 39);
+        border-radius: 10px;
+        position: absolute;
+        z-index: 3;
+        display:  block;
+        margin: 0 auto;
+        margin-top: 15vh;
+        margin-left: 4vw;
+        padding-bottom: 20px;
+        display: none;
+    }
+
+  
+    .help .section
+    {
+
+        color: white;
+        text-align: center;
+        
+    }
+
+    .help .section .content_header 
+    {
+        color: white;
+        margin: 15px 15px;
+        font-family: cursive;
+    }
+
+    .help .answer
+    {
+        margin: 15px 15px;
+        font-family: cursive;
+    }
+
+    .help button
+    {
+        width: 150px;
+        height: 60px;
+        background-color: black;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        box-shadow: 0 0 2px 5px rgb(14, 14, 14);
+        font-size: 25px;
+        border: 2px  solid rgb(29, 29, 29);
+        transition: all 1s ease-in;
+        text-decoration: none;
+        background-color: rgb(18, 18, 18);
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+
+    .blured_background
+    {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.248);
+        z-index: 2;
+        position: absolute;
+    }
+
+    .main_screen_footer
+    {
+        background-color: rgb(53, 53, 53);
+        margin: 0 auto;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100vw;
+        padding: 10px 2px;
+        text-align: center;
+        border-radius: 10px 10px 0 0;
+        z-index: 2;
+    }
+
+    .main_screen_footer .credit
+    {
+        color: aliceblue;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+
+    .paused
+    {
+        width: 92vw;
+        height: fit-content;
+        background-color: rgb(39, 39, 39);
+        border-radius: 10px;
+        position: absolute;
+        z-index: 3;
+        display:  block;
+        margin: 0 auto;
+        margin-top: 30vh;
+        margin-left: 4vw;
+        padding-bottom: 20px;
+        display: none;
+    }
+
+  
+    .paused .section
+    {
+        color: white;
+        text-align: center;
+    }
+
+    .paused .section .content_header 
+    {
+        color: white;
+        margin: 15px 15px;
+        font-family: cursive;
+    }
+
+    .paused .answer
+    {
+        margin: 15px 15px;
+        font-family: cursive;
+    }
+
+    .paused button
+    {
+        width: 150px;
+        height: 60px;
+        background-color: black;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        box-shadow: 0 0 2px 5px rgb(14, 14, 14);
+        font-size: 25px;
+        border: 2px  solid rgb(29, 29, 29);
+        transition: all 1s ease-in;
+        text-decoration: none;
+        background-color: rgb(18, 18, 18);
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+
+    .restart
+    {
+        width: 92vw;
+        height: fit-content;
+        background-color: rgb(39, 39, 39);
+        border-radius: 10px;
+        position: absolute;
+        z-index: 3;
+        display:  block;
+        margin: 0 auto;
+        margin-top: 15vh;
+        margin-left: 4vw;
+        padding-bottom: 20px;
+        display: none;
+    }
+
+  
+    .restart .section
+    {
+        color: white;
+        text-align: center;
+    }
+
+    .restart .section .content_header 
+    {
+        color: white;
+        margin: 15px 15px;
+        font-family: cursive;
+    }
+
+    .restart .answer
+    {
+        margin: 15px 15px;
+        font-family: cursive;
+    }
+
+    .restart button
+    {
+        width: 150px;
+        height: 60px;
+        background-color: black;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        box-shadow: 0 0 2px 5px rgb(14, 14, 14);
+        font-size: 25px;
+        border: 2px  solid rgb(29, 29, 29);
+        transition: all 1s ease-in;
+        text-decoration: none;
+        background-color: rgb(18, 18, 18);
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+
+    .completed
+    {
+        width: 92vw;
+        height: fit-content;
+        background-color: rgb(39, 39, 39);
+        border-radius: 10px;
+        position: absolute;
+        z-index: 3;
+        display:  block;
+        margin: 0 auto;
+        margin-top: 15vh;
+        margin-left: 4vw;
+        padding-bottom: 20px;
+        
+    }
+
+  
+    .completed .section
+    {
+
+        color: white;
+        text-align: center;
+        
+    }
+
+    .completed .section .content_header 
+    {
+        color: white;
+        margin: 15px 15px;
+        font-family: cursive;
+    }
+
+    .completed .answer
+    {
+        margin: 15px 15px;
+        font-family: cursive;
+    }
+
+    .completed button
+    {
+        width: 230px;
+        height: 60px;
+        background-color: black;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        box-shadow: 0 0 2px 5px rgb(14, 14, 14);
+        font-size: 25px;
+        border: 2px  solid rgb(29, 29, 29);
+        transition: all 1s ease-in;
+        text-decoration: none;
+        background-color: rgb(18, 18, 18);
+        margin: 0 auto;
+        margin-top: 30px;
+    }
 
 
 
