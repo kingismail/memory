@@ -144,7 +144,9 @@ document.addEventListener("DOMContentLoaded", function () {
           play_button_mobile.style.display = "";
           play_button_mobile.classList.add("move_button");
           load_tiles.style.transform = "translateY(-100px)";
-          main_screen_buttons.style.transform = "translateY(-100px)";
+          setTimeout(() => {
+            main_screen_buttons.style.transform = "translateY(-100px)";
+          }, 3000);
 
           setTimeout(() => {
             main_screen_transitions();
