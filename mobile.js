@@ -101,7 +101,6 @@ function returnCards()
     }
 }
 
-
 function clearArray() {for(i = 0 ; i < 2 ; i ++ ) open_cards.pop();}
 
 let open_cards = [];
@@ -132,9 +131,20 @@ document.addEventListener('click', function(event){
             clearArray();
             success += 1;
             
+            if (success === 8) setTimeout(() => {
+                document.getElementById('completed').style.display = 'block';
+                document.querySelector('.blured_background').style.display = '';
+            }, 2000);
+            
+            
         }
     }
 });
+
+function show_final_screen(){
+
+    document.getElementById('completed').style.display = 'block';
+}
 
 pause_button.addEventListener('click', function(){paused = true;
     const curr_time = game_seconds;
@@ -148,8 +158,6 @@ window.addEventListener('DOMContentLoaded', function(){
     //turnCards();
     //setTimeout(returnCards, 3000);
 })
-
-
 
 document.getElementById('help_close').addEventListener('click', function(){
 
@@ -180,6 +188,13 @@ document.getElementById('restart_yes').addEventListener('click', function(){
 document.getElementById('restart_no').addEventListener('click', function () {
 
     document.getElementById('restart').style.display = 'none';
+    document.querySelector('.blured_background').style.display = 'none';
+
+});
+
+document.getElementById('completed_button').addEventListener('click', function () {
+
+    document.getElementById('completed').style.display = 'none';
     document.querySelector('.blured_background').style.display = 'none';
 
 });
