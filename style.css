@@ -18,6 +18,11 @@ body
 
 @media screen and (min-width: 1024px){
     .main_screen{display: none;}
+    .DesktopRestrict{
+        color: white;
+        font-size: 30px;
+        text-align: center;
+    }
 }
 
 .rotate_card
