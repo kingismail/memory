@@ -39,6 +39,8 @@ body
         
     }
 
+    .DesktopRestrict{display:none;}
+
     .main_screen
     {
         width: 100vw;
