@@ -39,7 +39,10 @@ body
         
     }
 
-    .DesktopRestrict{display:none;}
+    .DesktopRestrict{
+        display: none;
+    
+                    }
 
     .main_screen
     {
