@@ -1,4 +1,8 @@
 jkskfhkdjshfkh
+]\
+
+//ignore this file it includes test lines that are entirely not part of the main project itself
+
 
  console.log(open_cards);
         console.log(event.target)
