@@ -118,11 +118,8 @@ document.addEventListener("click", function (event) {
   }
 });
 
-function show_final_screen(){
-
-    document.getElementById('completed').style.display = 'block';
-
-
+function show_final_screen() {
+  document.getElementById("completed").style.display = "block";
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -187,6 +184,3 @@ document
 document.getElementById("credits_close").addEventListener("click", function () {
   document.getElementById("credits").style.display = "none";
 });
-
-
-
